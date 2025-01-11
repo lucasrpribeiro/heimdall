@@ -6,7 +6,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon ./src/index.ts"
+    "dev": "nodemon ./src/index.ts",
+    "lint": "eslint ./ --ext .ts",
+    "lint:fix": "eslint ./ --ext .ts --fix"
   },
   "dependencies": {
     "express": "^4.21.2"
