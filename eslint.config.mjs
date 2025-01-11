@@ -20,6 +20,10 @@ export default [
         'error',
         'single'
       ],
+      semi: [
+        'error',
+        'never'
+      ],
       '@typescript-eslint/no-empty-interface': 'off'
     }
   },
