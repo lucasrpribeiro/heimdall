@@ -8,31 +8,20 @@ export default [
   {
     files: ['**/*.{js,mjs,cjs,ts}', './src/**/*.ts'],
     rules: {
-      indent: [
-        'error',
-        2
-      ],
-      'linebreak-style': [
-        'error',
-        'unix'
-      ],
-      quotes: [
-        'error',
-        'single'
-      ],
-      semi: [
-        'error',
-        'never'
-      ],
-      '@typescript-eslint/no-empty-interface': 'off'
-    }
+      indent: ['error', 2],
+      'linebreak-style': ['error', 'unix'],
+      quotes: ['error', 'single'],
+      semi: ['error', 'never'],
+      '@typescript-eslint/no-empty-interface': 'off',
+      '@typescript-eslint/no-empty-object-type': 'off',
+    },
   },
   {
     languageOptions: {
-      globals: globals.node
-    }
+      globals: globals.node,
+    },
   },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
-  prettierConfig
+  prettierConfig,
 ]
